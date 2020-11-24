@@ -1,0 +1,94 @@
+Sass -->  Sass dan Scss
+
+
+/////////////////////// nesting selector /////
+
+normal css
+.main {}
+.main h1 {}
+
+scss
+.main {
+	h1 {
+		
+	}
+}
+///////////////////////// the & symbol //////
+-----------------------
+:hover, :active 
+-----------------------
+normal css
+.button {}
+.button:hover{}
+
+scss
+.button {
+	&:hover {}
+}
+
+-----------------------
+.nameClass
+-----------------------
+normal css
+li {}
+li.current{}
+
+scss
+li {
+	&.current {}
+}
+/////////////////////////// variables ////
+syntax for writing varibales in scss
+$variableName:value;
+
+how to use:
+$my-color:#fff;
+h1 {
+	color:$my-color;
+}
+!note: before used variables, the variables must be defined first. And rules of scope is used
+
+/////////////////////////// mixins ////
+------------------------------------------------
+@mixin mixin-name {code}
+----------------------------------------------
+
+how to use:
+@mixin mixinName {code}
+
+.h1 {
+	@include mixinName;
+}
+
+------------------------------------------------
+@mixin mixin-name($argument) {code}
+----------------------------------------------
+how to use:
+@mixin mixinName($color) {
+	bakcground-color:$color;
+}
+
+.h1 {
+	@include mixinName(#fff);
+}
+
+/////////////////////////// functions////
+atributeColor:lighten/darken/(color, howMuch%)
+atribueColor:rgba(color, opaciy%)
+
+how to use:
+$myColor: blue;
+
+.button {
+	background-color: $myColor;
+}
+.button2 {
+	background-color:darken($myColor, 10%);
+}
+
+/////////////////////////// import ////
+add '_' to first char file name
+ex--> _colors.scss
+
+how to import:
+@import "_colors.scss"; or @import "colors"

@@ -1,0 +1,54 @@
+Go language
+/////////////////////////////////////////
+-println() --> to write in console
+(lower case L, not capital i or number 1)
+ex:
+package main
+
+func main(){
+	println("hello, world") /*output string "hello, world"*/
+	println(2) /*output int 2*/
+	println(2*1) /*output int 2*/
+	println("2") /*output string "2"*/
+	println("hai" + "andi") /*output string "haiandi"*/
+	println("2-3") /*output string "2-3"*/
+	println("2" + "2") /*output string "22"*/
+}
+
+comment //... and /*....*/
+
+--------------------
+declaring variables
+--------------------
+var nameVariable dataType --> ex: var n int
+
+var angka = 100 -> same with, var angka int = 100 -> same with, angka := 100
+
+ex:
+package main
+
+func main(){
+	var message = "Hello, world"
+	number := 100 
+	println(message, number) -> output 
+}
+
+--------------------
+if else statement
+--------------------
+if condition {statement} else {}
+!note: else syntax must be at same line with close bracket of "if"
+
+!(not)
+ex: z:=40
+if z not equal with 49 , print "not same"
+if !(z==49){
+	println("not same")
+}
+
+switch condition{
+	case value1:
+		statement
+	case value2:
+		statement
+}

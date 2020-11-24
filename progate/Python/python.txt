@@ -1,0 +1,156 @@
+PYTHON
+-------
+#.... -> comment
+print() -> output
+str(var_int) -> to change var type int to string type
+int(var_string) -> to change var type string to integer type
+elif --> else if
+
+chaining statement and,or
+
+if not x == 2 same with if x != 2
+if x > 3 and x < 5 same with if 3 < x < 5
+
+inputVariable = input('How many apples : ')
+inputVariable -> type string, so it can convert to int
+changingToStringVariable = int(inputVariable)
+
+list -> for make array
+ex: foods = ["food1", "food2"]
+
+foods.append("something") -> adding new element to list
+
+looping element on list
+for food in foods:
+	print('food')
+
+create dictionaries
+variableName = {'key':'value','key2':'value2'}
+ex: variableName = {'apple':'red','banana':'yellow'}
+if it printed, the value position will random, because dictionaries dont have fix position
+but for specific, we can write like this:
+print(variableName['key']) ex: print(fruits['apple']) output 'red'
+
+fruits['peach'] = 'pink' --> adding new element key and value
+fruits['apple'] = 'green' --> update the value of apple
+
+looping:
+
+for fruit_key in fruits:
+	print('The ' + fruit_key + ' is ' + fruits[fruit_key])
+
+///////////////
+while
+--------------
+while x > 0:
+	print()
+
+break --> for stop, if the statement founded
+for number in numbers:
+	if number == x;
+	break
+continue --> skip the rest of code
+for number in numbers:
+	if number == x;
+	continue
+///////////////
+function
+--------------
+def functionName(parameter1, parameter2):
+	#code
+
+how to call function:
+functionName(something1, something2)
+
+default parameter -> def functionName(parameter1, parameter2='something'):
+
+/////////
+return
+boolean -> False and True with capital letter in first letter
+------
+it must be save in some variable
+ex: sum = add() --> sum = value from function add()
+
+//////////
+import module
+--------------
+module -> utils.py
+
+how to use:
+import moduleName -> import utils
+
+using the modul have been imported:
+
+if utils.validate():
+
+/////////////////
+python standard library
+----------------------
+math -> sin(), cos(), tan()
+random -> random(), randint(), shuffle()
+datetime -> date(), time(), datetime()
+
+how to using:
+import libraryName
+ex: print_hand = random.randint(from,to)
+
+
+
+///////////////
+class
+--------------
+pass -> shows that there is no code to run
+
+class nameClass:
+	pass
+
+create new instance -> name_instance = nameClass()
+
+we can add variable in instance -> name_instance.variable = "something"
+
+//////
+adding method to class
+---
+
+class MenuItem:
+	def hello(self):
+		print('hello')
+
+calling method of class
+instanceName.hello()
+-------------------------------
+instance method is when method called from instance
+class MenuItem:
+	def hello(self, parameter):
+		print(self.name)
+instanceName = MenuItem()
+instanceName.name = "myName"
+instanceName.hello(value)
+-----------------------------------
+def __init__(self) --> it is like constructor, will automatic call when instance was created
+also we can add variable:
+def __init__(self):
+	self.name = "something"
+instanceName = MenuItem()
+print(instanceName.name)
+------------------------------------
+def __init__(self,name):
+	self.name = name
+
+instanceName = MenuItem("myName")
+print(instanceName.name)
+////////////////////
+import (2) --> directly import a class from module
+----------------
+from moduleName import className
+ex
+from menu_item import MenuItem
+
+
+
+---------------------
+inheritance class --> child class from the parent
+--------------------
+from menu_item import MenuItem
+class food(MenuItem):
+	pass

@@ -1,0 +1,52 @@
+standard library:
+-fmt --> input output console
+-math/rand --> random numbers
+-time --> date n time
+
+how to use:
+=====import libraries under the package,
+
+<fmt>
+ex:
+package main
+import "fmt"
+func main(){
+	fmt.Println("hello, world")
+	//Println with Capitalize "P"
+}
+
+%s --> string
+%d --> integer
+"\n" --> line break
+fmt.Printf(format, outputValue) --> 
+name:="you"
+fmt.Printf("%s, %s", "Hello", name)
+//output "Hello, you"\
+
+for syntax --> ex:for i:=1;i<=100;i++ {statements}
+
+<math/rand>
+ex:
+package main
+import "fmt"
+import "math/rand"
+func main(){
+	fmt.Println(rand.Intn(10))
+	//Intn is i capital, and generate number from 0 to 9
+}
+
+hasil dari code di atas random nya akan selalu sama walaupun dijalankan beberapa kali,
+jadi untuk membuatnya random kita harus import library "time"
+
+<time>
+ex:
+package main
+import "fmt"
+import "math/rand"
+import "time"
+func main(){
+	rand.Seed(time.Now().Unix())
+	fmt.Println(rand.Intn(10))
+	//Intn is i capital, and generate number from 0 to 9
+}
+

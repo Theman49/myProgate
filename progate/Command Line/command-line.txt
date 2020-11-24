@@ -1,0 +1,15 @@
+Command Line
+-touch fileName.extension --> make a new file
+-cat filename.extension --> display the content of the file
+-mkdir dirName --> make new directory
+-cd dirName --> change current directory
+-pwd --> display address current directory
+-ls --> display list item in current directory
+-cd .. --> back to current directory before
+-cd --> go to home directory
+-mv file_name dir_name_destination / mv dir_to_move dir_destination --> move a file or all files to another directory
+-mv old_file_name new_file_name --> for rename file
+-cp old_file_name new_file_name --> to copy a file
+-cp -r old_dir new_dir --> to copy a directory
+-rm file_name --> remove a file
+-rm -r dir_name --> remove a directory

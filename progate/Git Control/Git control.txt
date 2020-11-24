@@ -1,0 +1,15 @@
+Git >>>>>>>>>>>
+---------------------
+git init --> for initializing 
+git add fileName.extension --> adding file has been changed
+git commit -m "message for describe what is change"
+git remote add origin https://prog-8.com/mysite.git
+git push origin master
+git pull origin master
+
+add-commit-push-pull
+
+git status --> to check modified file
+git diff --> to see what have been added code
+git log --> to see commit
+git log -p --> to see past commit
